@@ -68,6 +68,10 @@ class APIConfig:
 
         return headers
     
+    def verify_file_exists(self, filename):
+        if not os.path.isfile(filename):
+            raise FileNotFoundError(f"O arquivo {filename} não foi encontrado no diretório.")
+    
     def get(self, endpoint, params = None):
         headers = self.get_headers()
         response = requests.get(f"{self.api_url}/{endpoint}",params=params, headers=headers)

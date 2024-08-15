@@ -4,19 +4,19 @@ class Justification:
     def __init__(self, client: APIConfig) -> None:
         self.client = client
         self.standard_justifications = [
-            {'NomeAbreviado': 'TES1', 'NomeCompleto': 'TESTE 1'},
-            {'NomeAbreviado': 'TES2', 'NomeCompleto': 'TESTE 2'},
-            {'NomeAbreviado': 'TES3', 'NomeCompleto': 'TESTE 3'},
-            # {'NomeAbreviado': 'D MED', 'NomeCompleto': 'DECLARACAO MEDICA'},
-            # {'NomeAbreviado': 'FALTA', 'NomeCompleto': 'FALTA INJUSTIFICADA', 'DescontarDsr': True, 'LancarComoHorasFalta': True},
-            # {'NomeAbreviado': 'FERIAS', 'NomeCompleto': 'FERIAS'},
-            # {'NomeAbreviado': 'FOLGA', 'NomeCompleto': 'FOLGA'},
-            # {'NomeAbreviado': 'INSS', 'NomeCompleto': 'AFASTAMENTO INSS'},
-            # {'NomeAbreviado': 'LIC MAT', 'NomeCompleto': 'LICENCA MATERNIDADE'},
-            # {'NomeAbreviado': 'LIC PAT', 'NomeCompleto': 'LICENCA PATERNIDADE'},
-            # {'NomeAbreviado': 'REUNIAO', 'NomeCompleto': 'REUNIAO'},
-            # {'NomeAbreviado': 'SERV EX', 'NomeCompleto': 'SERVICO EXTERNO'},
-            # {'NomeAbreviado': 'LUTO', 'NomeCompleto': 'LUTO FAMILIAR'}
+            # {'NomeAbreviado': 'TES1', 'NomeCompleto': 'TESTE 1'},
+            # {'NomeAbreviado': 'TES2', 'NomeCompleto': 'TESTE 2'},
+            # {'NomeAbreviado': 'TES3', 'NomeCompleto': 'TESTE 3'},
+            {'NomeAbreviado': 'D MED', 'NomeCompleto': 'DECLARACAO MEDICA'},
+            {'NomeAbreviado': 'FALTA', 'NomeCompleto': 'FALTA INJUSTIFICADA', 'DescontarDsr': True, 'LancarComoHorasFalta': True},
+            {'NomeAbreviado': 'FERIAS', 'NomeCompleto': 'FERIAS'},
+            {'NomeAbreviado': 'FOLGA', 'NomeCompleto': 'FOLGA'},
+            {'NomeAbreviado': 'INSS', 'NomeCompleto': 'AFASTAMENTO INSS'},
+            {'NomeAbreviado': 'LIC MAT', 'NomeCompleto': 'LICENCA MATERNIDADE'},
+            {'NomeAbreviado': 'LIC PAT', 'NomeCompleto': 'LICENCA PATERNIDADE'},
+            {'NomeAbreviado': 'REUNIAO', 'NomeCompleto': 'REUNIAO'},
+            {'NomeAbreviado': 'SERV EX', 'NomeCompleto': 'SERVICO EXTERNO'},
+            {'NomeAbreviado': 'LUTO', 'NomeCompleto': 'LUTO FAMILIAR'},
         ]
 
     def all(self):
