@@ -8,6 +8,7 @@ class Justification:
             # {'NomeAbreviado': 'TES2', 'NomeCompleto': 'TESTE 2'},
             # {'NomeAbreviado': 'TES3', 'NomeCompleto': 'TESTE 3'},
             {'NomeAbreviado': 'D MED', 'NomeCompleto': 'DECLARACAO MEDICA'},
+            {'NomeAbreviado': 'AT MED', 'NomeCompleto': 'ATESTADO MEDICO'},
             {'NomeAbreviado': 'FALTA', 'NomeCompleto': 'FALTA INJUSTIFICADA', 'DescontarDsr': True, 'LancarComoHorasFalta': True},
             {'NomeAbreviado': 'FERIAS', 'NomeCompleto': 'FERIAS'},
             {'NomeAbreviado': 'FOLGA', 'NomeCompleto': 'FOLGA'},

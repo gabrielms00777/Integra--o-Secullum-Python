@@ -3,6 +3,7 @@ from api_client import APIConfig
 from department import Department
 from justification import Justification
 from funcoes import Funcoes
+from employees import Employees
 
 def main():
     client = APIConfig(
@@ -13,11 +14,11 @@ def main():
     )
 
     # bank_id = input("Digite o numero do banco de dados")
-    bank_id = '98294'
+    bank_id = '100217'
     client.set_bank_id(bank_id)
 
     while True:
-        action = input("O que gostaria de ver:\n1 - Departamento\n2 - Justificativa\n3 - Funções\n4 - Sair\n")
+        action = input("O que gostaria de ver:\n1 - Departamento\n2 - Justificativa\n3 - Funções\n4 - Funcionarios\n5 - Sair\n")
 
         match action:
             case '1':
@@ -30,6 +31,9 @@ def main():
                 functions = Funcoes(client)
                 functions.treat_justifications()
             case '4':
+                employees = Employees(client)
+                employees.treat_justifications()
+            case '5':
                 print("Saindo...")
                 break
             case _:
